@@ -14,6 +14,7 @@ TBD - Abstract service injection getter methods
 TBD - Abstract mutable property
 TBD - Abstract `ConfigurableFileCollection` property
 TBD - Use an interface for Gradle instantiated types
+TBD - `ObjectFactory.configurableFiles()`
 
 ## Upgrade Instructions
 
@@ -65,9 +66,9 @@ in the next major Gradle version (Gradle 6.0). See the User Manual section on th
 
 The following are the newly deprecated items in this Gradle release. If you have concerns about a deprecation, please raise it via the [Gradle Forums](https://discuss.gradle.org).
 
-<!--
-### Example deprecation
--->
+### Incubating method `ProjectLayout.configurableFiles()` replaced by `ObjectFactory.fileCollection()`
+
+The method `ProjectLayout.configurableFiles()` is now deprecated, and will be removed in Gradle 6.0. You should use `ObjectFactory.fileCollection()` instead.
 
 ### Breaking changes
 

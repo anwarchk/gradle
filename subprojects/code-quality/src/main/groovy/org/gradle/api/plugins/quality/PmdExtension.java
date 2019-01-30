@@ -162,7 +162,7 @@ public class PmdExtension extends CodeQualityExtension {
      * Example: ruleSetFiles = files("config/pmd/myRuleSet.xml")
      */
     public void setRuleSetFiles(FileCollection ruleSetFiles) {
-        this.ruleSetFiles = project.getLayout().configurableFiles(ruleSetFiles);
+        this.ruleSetFiles = project.getObjects().fileCollection().from(ruleSetFiles);
     }
 
     /**
